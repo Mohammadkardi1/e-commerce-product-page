@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+:root {
+  /*  Primary */
+  --Orange: hsl(26, 100%, 55%);
+  --Pale-orange: hsl(25, 100%, 94%);
+
+  /* Neutral */
+  --Very-dark-blue: hsl(220, 13%, 13%);
+  --Dark-grayish-blue: hsl(219, 9%, 45%);
+  --Grayish-blue: hsl(220, 14%, 75%);
+  --Light-grayish-blue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+
+/* - Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%) */
+}
+
+
+.img-width {
+  max-width: 100%;
+  
+}
+
+.border-orange {
+  border: 2px solid var(--Orange); 
+}
+.btn-orange {
+  color:hsl(0, 0%, 100%);
+  background-color:hsl(26, 100%, 55%) ;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+
+/* Start Navbar Section */
+.navbar-toggler:focus {
+  box-shadow:none;
+}
+@media (min-width: 992px ) {
+  .navbar .offcanvas-body ul li {
+    border-bottom: 3px solid var(--White);
+  }
+  .navbar .offcanvas-body ul li:hover {
+    border-bottom-color: var(--Orange);
+  }
+}
+/* End Navbar Section */
+
+
+/* Start Cart Section  */
+.lightcart {
+  top: 87px;
+  right: 67px;
+  width: 36%;
+  font-size: 0.8rem;
+  z-index: 100;
+}
+@media (max-width:992px) {
+  .lightcart {
+    top: 120%;
+    right: 14%;
+    width: 75%;
+    font-size: 0.8rem;
+    z-index: 100;
+  }
+}
+.lightcart-img {
+  max-width:100%;
+}
+/* End Cart Section */
